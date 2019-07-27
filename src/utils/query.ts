@@ -2,8 +2,8 @@
 
 export const getMaxMinQuery = (
   field: string,
-  min: string,
-  max: string
+  min?: string,
+  max?: string
 ): object => {
   if (max === undefined && min === undefined) return {};
   let query = {};
